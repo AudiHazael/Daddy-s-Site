@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./Images/body-background.jpg') #000 100% / cover no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav Section */
+
+.navbar-nav li.nav-item a.nav-link {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar-nav button {
+  display: inline-flex;
+  padding: 14px 42px 13px 41px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #0691CA;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Hero Section */
+
+.hero-section {
+  /* padding-top: 6rem; */
+  display: flex;
+}
+
+p.hero {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+
+.hero-section h2 strong {
+  font-size: 24px;
+  color: #79bcd7;
+  font-weight: 400;
+}
+
+.hero-section h1 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-section h2 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.hero-section .col-md-7 {
+  padding-top: 10rem;
+}
+
+.m-img {
+  width: 476px;
+  height: 666px;
+  flex-shrink: 0;
+  mix-blend-mode: lighten;
+}
+
+.hero-button button {
+  display: inline-flex;
+  padding: 14px 42px 13px 41px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #0691CA;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.linkdIn img {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.linkdIn p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Aims Section */
+
+.aims .col-md-4 {
+  width: 400px;
+  height: 108px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 0 auto;
+}
+
+.aims .contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  border: 1px solid rgba(6, 145, 202, 0.30);
+  padding-right: 2rem;
+}
+
+.aims .contact {
+  color: #FFF;
+  text-align: right;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.aims h3 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aims p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+p.no {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Libre Caslon Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 2rem;
+}
+
+.copyright {
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Sections */
+
+.section {
+  padding: 4rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.02);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section p {
+  color: #ffffffd4;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.section h4 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.community-div {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+p.community {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h1.community {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-button button {
+  display: inline-flex;
+  padding: 14px 22px 13px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #15A54B;
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-3 {
+  width: 295px;
+  height: 498px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #FFF;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.col-md-3 img {
+  width: 295px;
+  height: 385px;
+  flex-shrink: 0;
+}
+
+.col-md-3 h4 {
+  color: #000;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.col-md-3 p {
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Inria Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.col-md-3 .link {
+  justify-content: end;
+}
+
+.col-md-3 a {
+  color: #0691CA;
+  font-family: Inria Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  p.hero {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .hero-section h2 strong {
+    font-size: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+  }
+
+  .hero-section h2 {
+    font-size: 18.45px;
+  }
+
+  .hero-section .col-md-7 {
+    padding-top: 4rem;
+  }
+
+  .aims .col-md-4 {
+    margin-top: 2rem;
+  }
+
+  p.community {
+    font-size: 18.45px;
+  }
+
+  h1.community {
+    font-size: 24px;
+  }
+}
