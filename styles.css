@@ -328,7 +328,7 @@ h1.community {
 @media only screen and (max-width: 767px) {
 
   img.m-img {
-    width: 98%;
+    width: 98dvw;
     height: auto;
   }
 
