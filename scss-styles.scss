@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./Images/body-background.jpg') #000 100% / cover no-repeat;
+}
+
+// Variables
+$primaryTextColor: #151212;
+$secondaryTextColor: rgba(255, 255, 255, 0.80);
+
+// Functions
+
+@mixin primaryButton() {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+@mixin flexCenter($direction, $align) {
+  display: flex;
+  align-items: align;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: center;
+}
+
+@mixin paragraphStyle($textSize) {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: $textSize;
+}
+
+@mixin titleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin subtitleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+Header {
+  .navbar-nav li.nav-item a.nav-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .navbar-nav button {
+    padding: 14px 42px 13px 41px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    background: #0691CA;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+// Other Pages
+.hero-section {
+  padding: 4rem 0;
+  display: flex;
+
+
+
+  .row {
+    @include flexCenter(row, center);
+
+    .col-md-7 {
+      p {
+        @include paragraphStyle(24px);
+        font-weight: 300;
+        letter-spacing: 4.8px;
+      }
+
+      h1 {
+        color: #FFF;
+        font-family: Inria Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      h2 {
+        color: #FFF;
+        font-family: Inria Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        strong {
+          font-size: 24px;
+          color: #79bcd7;
+          font-weight: 400;
+        }
+      }
+
+      .hero-button {
+        button {
+          display: inline-flex;
+          padding: 14px 42px 13px 41px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          background: #0691CA;
+
+          @include paragraphStyle(16px);
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .col-md-5 {
+      m-image {
+        width: auto;
+        height: 400px;
+        flex-shrink: 0;
+        mix-blend-mode: lighten;
+      }
+    }
+  }
+}
+
+// Books Page
+.section {
+  padding-top: 4rem;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.02);
+
+  @include flexCenter(column, center);
+
+  .about {
+    h4 {
+      color: #FFF;
+      font-family: Inria Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      @include paragraphStyle(15px);
+      font-weight: 300;
+    }
+  }
+
+  .row {
+    .col-md-3 {
+      width: 295px;
+      height: 498px;
+      flex-shrink: 0;
+      border-radius: 1px;
+      background: #FFF;
+      padding: 0;
+      margin: 0 auto;
+
+      img {
+        width: 295px;
+        height: 385px;
+        flex-shrink: 0;
+      }
+
+      div {
+        h4 {
+          color: #000;
+          font-family: Inria Sans;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        p {
+          color: rgba(0, 0, 0, 0.80);
+          font-family: Inria Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+
+      div.link {
+        justify-content: end;
+
+        a {
+          color: #0691CA;
+          font-family: Inria Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .community-div {
+    margin: 6rem 0;
+
+    h1 {
+      color: #FFF;
+      text-align: center;
+      font-family: Inria Sans;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      color: #FFF;
+      text-align: center;
+      font-family: Inria Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    .section-button {
+      @include flexCenter(rov, center);
+
+      button {
+        display: inline-flex;
+        padding: 14px 22px 13px 22px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background: #15A54B;
+
+        @include paragraphStyle(16px);
+        color: #FFF;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Common Sections
+.linkdIn {
+  img {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+
+  p {
+    @include paragraphStyle(15px);
+  }
+}
+
+.aims {
+  .col-md-4 {
+    width: 400px;
+    height: 108px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    margin: 0 auto;
+
+    h3 {
+      @include paragraphStyle(20px);
+      font-weight: 400;
+    }
+
+    p {
+      @include paragraphStyle(15px);
+      font-weight: 300;
+    }
+
+    p.no {
+      @include paragraphStyle(30px);
+      color: $secondaryTextColor;
+      font-family: Libre Caslon Display;
+    }
+  }
+
+  .contact-details {
+    @include flexCenter(column, end);
+    border: 1px solid rgba(6, 145, 202, 0.30);
+    padding-right: 2rem;
+
+    p.contact {
+      @include paragraphStyle(20px);
+      font-weight: 400px;
+    }
+  }
+}
+
+footer {
+  margin-top: 2rem;
+
+  .copyright {
+    @include flexCenter(row, center);
+
+    p {
+      @include paragraphStyle(12px);
+      font-weight: 300;
+    }
+  }
+}
