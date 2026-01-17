@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  background: url('./Images/body-background.jpg') #000 100% / cover no-repeat;
+  background: url("./Images/body-background.jpg") #000 100% / cover no-repeat;
+
 }
 
 // Variables
 $primaryTextColor: #151212;
-$secondaryTextColor: rgba(255, 255, 255, 0.80);
+$secondaryTextColor: rgba(255, 255, 255, 0.8);
 
 // Functions
 
@@ -33,7 +34,7 @@ $secondaryTextColor: rgba(255, 255, 255, 0.80);
 }
 
 @mixin paragraphStyle($textSize) {
-  color: #FFF;
+  color: #fff;
   font-family: Inria Sans;
   font-style: normal;
   font-weight: 400;
@@ -65,7 +66,7 @@ a {
 
 Header {
   .navbar-nav li.nav-item a.nav-link {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Inria Sans;
     font-size: 18px;
@@ -80,9 +81,9 @@ Header {
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    background: #0691CA;
+    background: #0691ca;
 
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Inria Sans;
     font-size: 16px;
@@ -97,8 +98,6 @@ Header {
   padding: 4rem 0;
   display: flex;
 
-
-
   .row {
     @include flexCenter(row, center);
 
@@ -110,7 +109,7 @@ Header {
       }
 
       h1 {
-        color: #FFF;
+        color: #fff;
         font-family: Inria Sans;
         font-size: 48px;
         font-style: normal;
@@ -119,7 +118,7 @@ Header {
       }
 
       h2 {
-        color: #FFF;
+        color: #fff;
         font-family: Inria Sans;
         font-size: 20px;
         font-style: normal;
@@ -140,7 +139,7 @@ Header {
           justify-content: center;
           align-items: center;
           border-radius: 6px;
-          background: #0691CA;
+          background: #0691ca;
 
           @include paragraphStyle(16px);
           text-align: center;
@@ -171,7 +170,7 @@ Header {
 
   .about {
     h4 {
-      color: #FFF;
+      color: #fff;
       font-family: Inria Sans;
       font-size: 32px;
       font-style: normal;
@@ -191,7 +190,7 @@ Header {
       height: 498px;
       flex-shrink: 0;
       border-radius: 1px;
-      background: #FFF;
+      background: #fff;
       padding: 0;
       margin: 0 auto;
 
@@ -212,7 +211,7 @@ Header {
         }
 
         p {
-          color: rgba(0, 0, 0, 0.80);
+          color: rgba(0, 0, 0, 0.8);
           font-family: Inria Sans;
           font-size: 13px;
           font-style: normal;
@@ -225,7 +224,7 @@ Header {
         justify-content: end;
 
         a {
-          color: #0691CA;
+          color: #0691ca;
           font-family: Inria Sans;
           font-size: 12px;
           font-style: normal;
@@ -240,7 +239,7 @@ Header {
     margin: 6rem 0;
 
     h1 {
-      color: #FFF;
+      color: #fff;
       text-align: center;
       font-family: Inria Sans;
       font-size: 48px;
@@ -250,7 +249,7 @@ Header {
     }
 
     p {
-      color: #FFF;
+      color: #fff;
       text-align: center;
       font-family: Inria Sans;
       font-size: 24px;
@@ -268,10 +267,10 @@ Header {
         justify-content: center;
         align-items: center;
         border-radius: 6px;
-        background: #15A54B;
+        background: #15a54b;
 
         @include paragraphStyle(16px);
-        color: #FFF;
+        color: #fff;
         text-align: center;
         font-weight: 700;
       }
@@ -320,7 +319,7 @@ Header {
 
   .contact-details {
     @include flexCenter(column, end);
-    border: 1px solid rgba(6, 145, 202, 0.30);
+    border: 1px solid rgba(6, 145, 202, 0.3);
     padding-right: 2rem;
 
     p.contact {
