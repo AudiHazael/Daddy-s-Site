@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Book a Consultation | Professor Moses Audi</title>
+    <meta
+      name="description"
+      content="Schedule a one-on-one theological consultation with Professor Moses Audi. Choose your preferred date and time, and receive expert guidance for pastors, missionaries, and theological institutions."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/Images/logo-png.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white antialiased">
+    <!-- Header -->
+    <header class="border-white/10 border-b">
+      <nav
+        class="flex justify-between items-center mx-auto px-4 py-5 max-w-7xl"
+      >
+        <a href="index.html"
+          ><img
+            src="/Images/logo-transparent-png 2.png"
+            alt="M. Audi Logo"
+            class="h-10"
+        /></a>
+        <ul class="hidden md:flex gap-10 text-sm">
+          <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+          <li><a href="books.html" class="hover:text-sky-400">Books</a></li>
+          <li>
+            <a href="WhatsApp-Community.html" class="hover:text-sky-400"
+              >Community</a
+            >
+          </li>
+          <li><a href="contact.html" class="hover:text-sky-400">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero / Intro -->
+    <section
+      class="flex md:flex-row flex-col justify-center items-center gap-12 md:gap-16 px-4 py-16 md:py-24"
+    >
+      <div class="flex flex-col space-y-6 md:w-7/12">
+        <h1 class="font-bold text-4xl sm:text-5xl leading-tight">
+          Schedule Your Consultation
+        </h1>
+        <p class="text-white/80 text-base sm:text-lg">
+          Book a personalized session with Professor Moses Audi. Choose a date
+          and time that works for you, and receive expert theological guidance
+          tailored to pastors, missionaries, and institutions.
+        </p>
+      </div>
+
+      <div class="flex justify-center w-full md:w-5/12">
+        <img
+          src="Images/IMG-20230812-WA0003 1.png"
+          alt="Professor Moses Audi"
+          class="shadow-xl rounded-xl h-64 sm:h-96 md:h-[500px] object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section
+      id="booking"
+      class="space-y-12 mx-auto px-4 py-16 md:py-24 max-w-4xl"
+    >
+      <h2 class="font-bold text-3xl text-center">Book a Session</h2>
+      <p class="mx-auto max-w-2xl text-white/70 text-center">
+        Select a date and time, provide your details, and we’ll confirm your
+        consultation.
+      </p>
+
+      <form
+        action="#"
+        method="POST"
+        class="flex flex-col gap-6 bg-white/5 p-8 border border-white/10 rounded-xl"
+      >
+        <div class="flex md:flex-row flex-col gap-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white placeholder-white/50"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white placeholder-white/50"
+          />
+        </div>
+
+        <div class="flex md:flex-row flex-col gap-4">
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white placeholder-white/50"
+          />
+          <input
+            type="date"
+            name="date"
+            placeholder="Preferred Date"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white"
+          />
+        </div>
+
+        <div class="flex md:flex-row flex-col gap-4">
+          <input
+            type="time"
+            name="time"
+            placeholder="Preferred Time"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white"
+          />
+          <select
+            name="type"
+            required
+            class="flex-1 bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white"
+          >
+            <option value="" disabled selected>Select Consultation Type</option>
+            <option value="pastor">Pastoral Guidance</option>
+            <option value="missionary">Mission Strategy</option>
+            <option value="institution">Institutional Advisory</option>
+          </select>
+        </div>
+
+        <textarea
+          name="notes"
+          rows="4"
+          placeholder="Additional Notes (Optional)"
+          class="bg-white/10 p-3 border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-white placeholder-white/50"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="bg-sky-500 hover:bg-sky-600 mx-auto px-6 py-3 rounded-md w-max font-semibold transition hover:-translate-y-1 transform"
+        >
+          Book Consultation
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-6 border-white/10 border-t text-white/60 text-xs text-center"
+    >
+      © M.AUDI — Designed by
+      <a
+        href="https://wa.link/8k0f7s"
+        target="_blank"
+        rel="nofollow"
+        class="underline"
+        >Hazael Audi</a
+      >
+    </footer>
+  </body>
+</html>
